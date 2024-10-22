@@ -46,6 +46,23 @@ password : admin
 - **Download balance sheet**: `api/balance-sheet/`
 - **Download indvidual balance sheets**: `api/balance-sheet/<int:pk>/`
 
+## How to Send Data for Add Expenses
+
+To add an expense, send a `POST` request to the `/add-expenses/` endpoint with the following JSON data:
+Here, `EX` stands for the Exact billing method. Adjust the billing_method and values based on the desired split method.
+```json
+{
+    "name": "hangout",
+    "total_bill": 3000,
+    "billing_method": "EX",
+    "owned_by": [
+        {"username": "testuser1", "owes": "1000"},
+        {"username": "testuser2", "owes": "1000"},
+        {"username": "testuser3", "owes": "1000"}
+    ]
+}
+```
+
 ## Tests
 
 To run the test suite:
