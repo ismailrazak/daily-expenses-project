@@ -72,5 +72,5 @@ python manage.py test
 ```
 ## Performance Optimization
 
-We used `prefetch_related` and `select_related` methods to reduce the number of SQL queries and optimize database performance.
+I have used `prefetch_related` and `select_related` methods to reduce the number of SQL queries and optimize database performance.
 
