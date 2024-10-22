@@ -25,12 +25,18 @@ python manage.py runserver
 ### 5. Access the API
 
 You can access the API at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+### 5. Access the admin panel.
+
+username : admin
+password : admin
+
 ##  6 API Endpoints
 
 ### User Endpoints
 
 - **Create user**: `api/create-user/`
 - **Retrieve user details**: `api/user-detail/<int:pk>/`
+- - **Register user**: `registration/`
 
 ### Expense Endpoints
 
@@ -50,3 +56,4 @@ python manage.py test
 ## Performance Optimization
 
 We used `prefetch_related` and `select_related` methods to reduce the number of SQL queries and optimize database performance.
+
